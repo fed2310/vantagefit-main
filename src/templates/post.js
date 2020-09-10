@@ -14,6 +14,7 @@ import { MetaData } from '../components/common/meta'
 */
 const Post = ({ data, location }) => {
     const post = data.ghostPost
+    alert('a')
 
     return (
         <>

@@ -187,5 +187,18 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images-native-lazy-load`,
+                        options: {
+                            loading: "lazy" // "lazy" | "eager" | "auto"
+                            }
+                        }
+                ],
+            },
+        }
     ],
 }

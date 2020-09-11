@@ -1,7 +1,7 @@
 {
   "development": {
-    "apiUrl": "https://vantagefit.ghost.io",
-    "contentApiKey": "339ce8a766cf27fbd0b3f30d22"
+    "apiUrl": "http://localhost:2368",
+    "contentApiKey": "4a44860f25539193a879803e1b"
   },
   "production": {
     "apiUrl": "https://vantagefit.ghost.io",

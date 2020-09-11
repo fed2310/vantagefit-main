@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql, withPrefix } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { Navigation } from '.'
@@ -100,7 +100,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                                 </div>
                                             </div>
                                             <div className="action_btn d-flex align-items-center mt_40 mb_40 "> <a href="https://go.vantagefit.io/get-a-demo/" className="vc_button banner_btn button-style button_width"> Request Demo </a>
-                                                <a className="popupyoutubevideo popup-youtube banner_btn white_button button-style button_width" href="https://www.youtube.com/watch?v=fVhfKMo3H80" >
+                                                <a className="popupyoutubevideo popup-youtube banner_btn white_button button-style button_width" href="https://www.youtube.com/watch?v=fVhfKMo3H80" style={{marginLeft: "20"}}>
                                                     <div className=""> <span className="fa fa-play-circle" ></span><span >&nbsp;&nbsp;Watch Video </span>
                                                     </div>
                                                 </a>

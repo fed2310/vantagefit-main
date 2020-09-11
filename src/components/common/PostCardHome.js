@@ -4,30 +4,28 @@ import { Link } from 'gatsby'
 import { Tags } from '@tryghost/helpers-gatsby'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
-const PostCard = ({ post }) => {
+const PostCardHome = ({ post }) => {
     const url = `/${post.slug}/`
     const readingTime = readingTimeHelper(post)
 
     return (
-        <div className="col-lg-4 col-md-12 col-xs-12 col-sm-12">
-            <article className="post-card post tag-resources ">
-                <div className="img-holder">
-                    <a className="post-card-image-link" href={url}>
-                        <img className="post-card-image img-responsive" src={ post.feature_image } alt="A Complete Guide To Corporate Wellness Program"/>
+        <div className="col-md-4 col-lg-4 col-sx-12 col-sm-4 d-left">
+            <div className="box-shadow">
+                <div className="overflow">
+                    <a href={url} target="_blank">
+                        <img className="img-responsive ease" src={ post.feature_image } alt="blog"/>
                     </a>
                 </div>
-                <div className="post-card-content">
-                    <a className="post-card-content-link" href={url}>
-                        <header className="post-card-header">
-                            <h2 className="post-card-title"> { post.title}</h2>
-                        </header>
-                    </a>
-                    <section className="post-card-excerpt">
-                        <p dangerouslySetInnerHTML={{ __html: post.excerpt }}></p>
-                    </section>
-                    <p className="readmorepostcard"><a href={url} className="vc_active">Read More <span className="fa fa-long-arrow-right" ></span></a></p>
-                </div>
-            </article>
+                <a href={url} target="_blank">
+                    <div className="post_titel">
+                        { post.title}
+                    </div>
+                </a>
+                <a href={url} target="_blank">
+                    <div className="blog_excerpt" dangerouslySetInnerHTML={{ __html: post.excerpt }}>
+                    </div>
+                </a>
+            </div>
         </div>
         // <Link to={url} className="post-card">
         //     <header className="post-card-header">
@@ -58,7 +56,7 @@ const PostCard = ({ post }) => {
     )
 }
 
-PostCard.propTypes = {
+PostCardHome.propTypes = {
     post: PropTypes.shape({
         slug: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
@@ -77,4 +75,4 @@ PostCard.propTypes = {
     }).isRequired,
 }
 
-export default PostCard
+export default PostCardHome

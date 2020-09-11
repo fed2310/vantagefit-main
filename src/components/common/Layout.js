@@ -40,6 +40,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
             <Helmet>
                 <html lang={site.lang} />
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
+                <script src="https://unpkg.com/@tryghost/content-api@{version}/umd/content-api.min.js"/>
 
                 <body className={bodyclassName} />
             </Helmet>

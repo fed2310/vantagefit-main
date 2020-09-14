@@ -61,7 +61,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             <img className="d_logo site-logo" src={site.logo} alt={site.title} />
                                             : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
-                                        <img width="220" alt="Vantage Circle" className="stick_logo lozad" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/00-vantagefit-logo.png" data-loaded="true" />
+                                        <img width="220" alt="Vantage Circle" className="stick_logo lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/00-vantagefit-logo.png" data-loaded="true" />
                                     </Link>
                                 </div>
                                     
@@ -79,31 +79,24 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                         </nav>
                     </header>
                     { isHome ?    
-                        <div className="elementor">
-                            <section className="n_hero_banner_area" id="home">
-                                
-                                <div className="container custom-container">
-                                    <div className="row column-change ipadcolumn-change">
-                                        <div className="col-lg-7 col-md-12 left_pclr">
-                                            <div className="n_banner_content">
-                                                <h1>Revolutionize Your Corporate Wellness Program</h1>
-                                                <p>Give your employees the best workplace experience with an engaging corporate wellness program. Get them moving and encourage a healthy lifestyle for better productivity with Vantage Fit.</p>
-                                                <div className="app_downloadbanner abtesting">
-                                                    <div className=" transform button-style dwnload_app">
-                                                        <a href="https://apps.apple.com/in/app/vantage-fit/id1393594182" target="_blank">
-                                                            <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/appstore.png" alt="ios" className="donloadappimg lozad" />
-                                                        </a>
-                                                    </div>
-                                                    <div className=" transform button-style dwnload_app">
-                                                        <a href="https://play.google.com/store/apps/details?id=com.bargaintechnologies.vantagefit.v_fit" target="_blank">
-                                                            <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/googleplay.png" alt="playstore" className="donloadappimg lozad" />
-                                                        </a>
-                                                    </div>
+                    <div className="elementor">
+                        <section className="n_hero_banner_area" id="home">
+                            
+                            <div className="container custom-container">
+                                <div className="row column-change ipadcolumn-change">
+                                    <div className="col-lg-7 col-md-12 left_pclr">
+                                        <div className="n_banner_content">
+                                            <h1>Revolutionize Your Corporate Wellness Program</h1>
+                                            <p>Give your employees the best workplace experience with an engaging corporate wellness program. Get them moving and encourage a healthy lifestyle for better productivity with Vantage Fit.</p>
+                                            <div className="app_downloadbanner abtesting">
+                                                <div className=" transform button-style dwnload_app">
+                                                    <a href="https://apps.apple.com/in/app/vantage-fit/id1393594182" target="_blank">
+                                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/appstore.png" alt="ios" className="donloadappimg lozad" />
+                                                    </a>
                                                 </div>
-                                                <div className="action_btn d-flex align-items-center mt_40 mb_40 "> <a href="https://go.vantagefit.io/get-a-demo/" className="vc_button banner_btn button-style button_width"> Request Demo </a>
-                                                    <a className="popupyoutubevideo popup-youtube banner_btn white_button button-style button_width" href="https://www.youtube.com/watch?v=fVhfKMo3H80" style={{marginLeft: "20"}}>
-                                                        <div className=""> <span className="fa fa-play-circle" ></span><span >&nbsp;&nbsp;Watch Video </span>
-                                                        </div>
+                                                <div className=" transform button-style dwnload_app">
+                                                    <a href="https://play.google.com/store/apps/details?id=com.bargaintechnologies.vantagefit.v_fit" target="_blank">
+                                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/googleplay.png" alt="playstore" className="donloadappimg lozad" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -114,10 +107,16 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                                 <img className="vfit hidden-xs hidden-sm hidden-sml lozad" src="https://res.cloudinary.com/vantagecircle/image/upload/w_360/v1597380700/VantageFit/website/vantage-fit-person_compress.png" alt="VFit" />
                                             </div>
                                         </div>
-                                        <div className="shape_images hidden-xs hidden-sm">
-                                            <img className="lines lozad" src="https://res.cloudinary.com/vantagecircle/image/upload/w_600/v1580904957/VantageFit/website/lines.png" alt="lines" />
-                                            <img className="pulse lozad" src="https://res.cloudinary.com/vantagecircle/image/upload/w_300/v1580904957/VantageFit/website/heart-lines.png" alt="pulse" />
+                                    </div>
+                                    <div className="col-lg-4 offset-lg-1 col-md-12">
+                                        <div className="mobile_img ">
+                                            <img className="mobile_banner" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_410/v1597380700/VantageFit/website/vantagefit-devices_compress.png" alt="Mobile App" />
+                                            <img className="vfit hidden-xs hidden-sm hidden-sml lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_360/v1597380700/VantageFit/website/vantage-fit-person_compress.png" alt="VFit" />
                                         </div>
+                                    </div>
+                                    <div className="shape_images hidden-xs hidden-sm">
+                                        <img className="lines lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_600/v1580904957/VantageFit/website/lines.png" alt="lines" />
+                                        <img className="pulse lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_300/v1580904957/VantageFit/website/heart-lines.png" alt="pulse" />
                                     </div>
                                 </div>
                             </section>
@@ -164,19 +163,19 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             <p>61% of employees agreed that they had made healthier lifestyle choices because of their company’s employee wellness program.</p>
                                         </div>
                                     </div>
-                                </div>
-                            </section>
-                            <section className="section_space">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                                            <div className="title_head text-center title_spc"><span>How Corporate Wellness Program</span>
-                                                <br />Can Help Your Organisation</div>
+                                    <div className="col-lg-6 col-md-12 col-xs-12 col-sm-12 hidden-xs hidden-sm">
+                                        <div className="text-center">
+                                            <img className=" image-fit mob_image lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/corporate-wellness-organisation-compress.png" alt="wellness" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="container">
                                     <div className="row d-flex align_items_center">
+                                        <div className="col-lg-6 col-md-12 col-xs-12 col-sm-12 hidden-xs hidden-sm">
+                                            <div className="text-center">
+                                                <img className="mob_image lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/increase-engagement-compress.png" alt="engagement" />
+                                            </div>
+                                        </div>
                                         <div className="col-lg-6 col-md-12 col-xs-12 col-sm-12 content_benefits ">
                                             <div className="outline-round">
                                                 <div className="rel_text">
@@ -290,9 +289,38 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="col-lg-4 col-md-4 col-xs-12 col-sm-12 mid-activity hidden-xs hidden-sm">
-                                                <div id="activity">
-                                                    <img className="mob_image Image-Overlay active-img lozad" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/activity-calorie_compress.png" alt="activity" />
+                                        </div>
+                                        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-12 mid-activity hidden-xs hidden-sm">
+                                            <div id="activity">
+                                                <img className="mob_image Image-Overlay active-img lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/activity-calorie_compress.png" alt="activity" />
+                                            </div>
+                                            <div id="heartrate">
+                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/heart-rate_compress.png" alt="heartrate" />
+                                            </div>
+                                            <div id="health">
+                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/wearable-devices_compress.png" alt="health dairy" />
+                                            </div>
+                                            <div id="contest">
+                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/contest-challenge_compress.png" alt="contest" />
+                                            </div>
+                                            <div id="assessment">
+                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/health-risk-assesment_compress.png" alt="contest" />
+                                            </div>
+                                            <div id="meter">
+                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/mood-o-meter_compress.png" alt="moodometer" />
+                                            </div>
+                                            <div id="redeem">
+                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/fitness-points_compress.png" alt="fitnesspoints" />
+                                            </div>
+                                            <div id="leaderboard">
+                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/realtime-leaderboard_compress.png" alt="leaderboard" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-6 col-xs-12 col-sm-12 right-activity">
+                                            <div data-img="assessment" className="box_item">
+                                                <div className="featuresimg">
+                                                    <div className="sprite first-image activebox hidden-xs hidden-sm healthrisk"></div>
+                                                    <div className="sprite second-image hidden-xs hidden-sm healthriskactive"></div>
                                                 </div>
                                                 <div id="heartrate">
                                                     <img className="mob_image Image-Overlay" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/heart-rate_compress.png" alt="heartrate" />
@@ -389,30 +417,30 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                         </div>
                                     </div>
                                 </div>
-                            </section>
-                            <section className="section_space hidden-xs hidden-sm" style={{paddingTop: "0"}}>
-                                <div style={{backgroundColor: "#e8fcfa"}}>
-                                    <div className="container custom-container">
-                                        <div className="row">
-                                            <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthyworkforce">
-                                                <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_500/v1597380700/VantageFit/website/person-running-corporate-wellness_compress.png" alt="Request Demo" className="mob_image lozad" />
-                                            </div>
-                                            <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthforce wow fadeInDown animated">
-                                                <div className="title_second">
-                                                    <h3 className="second_heading"><span>Build a</span> Healthy Workforce!</h3>
-                                                    <p>Download Vantage Fit app today.</p>
-                                                    <div className="store-icons">
-                                                        <div className="app_downloadbanner index_download">
-                                                            <div className=" transform button-style dwnload_app">
-                                                                <a href="https://apps.apple.com/in/app/vantage-fit/id1393594182" target="_blank">
-                                                                    <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/appstore.png" alt="ios" className="buildapp lozad" />
-                                                                </a>
-                                                            </div>
-                                                            <div className=" transform button-style dwnload_app">
-                                                                <a href="https://play.google.com/store/apps/details?id=com.bargaintechnologies.vantagefit.v_fit" target="_blank">
-                                                                    <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/googleplay.png" alt="playstore" className="buildapp lozad" />
-                                                                </a>
-                                                            </div>
+                            </div>
+                        </section>
+                        <section className="section_space hidden-xs hidden-sm" style={{paddingTop: "0"}}>
+                            <div style={{backgroundColor: "#e8fcfa"}}>
+                                <div className="container custom-container">
+                                    <div className="row">
+                                        <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthyworkforce">
+                                            <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_500/v1597380700/VantageFit/website/person-running-corporate-wellness_compress.png" alt="Request Demo" className="mob_image lozad" />
+                                        </div>
+                                        <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthforce wow fadeInDown animated">
+                                            <div className="title_second">
+                                                <h3 className="second_heading"><span>Build a</span> Healthy Workforce!</h3>
+                                                <p>Download Vantage Fit app today.</p>
+                                                <div className="store-icons">
+                                                    <div className="app_downloadbanner index_download">
+                                                        <div className=" transform button-style dwnload_app">
+                                                            <a href="https://apps.apple.com/in/app/vantage-fit/id1393594182" target="_blank">
+                                                                <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/appstore.png" alt="ios" className="buildapp lozad" />
+                                                            </a>
+                                                        </div>
+                                                        <div className=" transform button-style dwnload_app">
+                                                            <a href="https://play.google.com/store/apps/details?id=com.bargaintechnologies.vantagefit.v_fit" target="_blank">
+                                                                <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/googleplay.png" alt="playstore" className="buildapp lozad" />
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -441,49 +469,52 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/admindashboard_compress.png" alt="admindashboard" className="mob_image image-fit lozad" />
                                         </div>
                                     </div>
-                                </div>
-                            </section>
-                            <section className="section_space">
-                                <div className="wellness-background">
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-right mob-pull">
-                                                <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_268/v1597380700/VantageFit/website/_guide-to-corporate-wellness_compress.png" alt="wellnessprogram" className="downloadbook hidden-xs lozad" />
-                                            </div>
-                                            <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthforce wow fadeInDown animated">
-                                                <div className="title_second">
-                                                    <div><strong className="guide">A COMPLETE GUIDE TO</strong>
-                                                    </div><strong className="second_heading">Corporate<br />Wellness Programs</strong> 
-                                                </div>
-                                                <div className="transform">
-                                                    <a className="popup-youtube banner_btn white_button button-style" href="https://go.vantagefit.io/free-ebook-corporate-wellness-program/">
-                                                        <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_15/v1580904957/VantageFit/website/download.png" alt="freedownload" className="hidden-xs hidden-sm lozad" /> 
-                                                        <span>&nbsp;&nbsp;Free Download </span> 
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="images-wellness hidden-xs hidden-sm hidden-sml">
-                                            <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/dumbell.png" className="img-1 lozad" alt="wellnessprogram" />
-                                            <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/cycle.png" className="img-2 lozad" alt="wellnessprogram" />
-                                            <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/food.png" className="img-3 lozad" alt="wellnessprogram" />
-                                            <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/shoe.png" className="img-4 lozad" alt="wellnessprogram" />
-                                        </div>
+                                    <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-center image-change">
+                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/admindashboard_compress.png" alt="admindashboard" className="mob_image image-fit lozad" />
                                     </div>
                                 </div>
-                                <div className="welness-bottom hidden-xs"></div>
-                            </section>
-                            <section className="section_space">
+                            </div>
+                        </section>
+                        <section className="section_space">
+                            <div className="wellness-background">
                                 <div className="container">
-                                    <div className="row d-flex align_items_center">
-                                        <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 wow fadeInLeft animated animated text-center">
-                                            <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1597724811/VantageFit/website/week-campaign-12_compress.png" alt="campaign" className="mob_image lozad" />
+                                    <div className="row">
+                                        <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-right mob-pull">
+                                            <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_268/v1597380700/VantageFit/website/_guide-to-corporate-wellness_compress.png" alt="wellnessprogram" className="downloadbook hidden-xs lozad" />
                                         </div>
-                                        <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-                                            <div className="title_head default-spc"><span>12 Week</span>
-                                                <br />Campaign</div>
-                                            <p>Vantage Fit’s unique 12-Week Health Campaign feature gives employers the liberty to usher workplace wellness by assigning different health challenges and tasks specially designed by our certified fitness experts each week to help your employees take up a healthy lifestyle.</p>
+                                        <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthforce wow fadeInDown animated">
+                                            <div className="title_second">
+                                                <div><strong className="guide">A COMPLETE GUIDE TO</strong>
+                                                </div><strong className="second_heading">Corporate<br />Wellness Programs</strong> 
+                                            </div>
+                                            <div className="transform">
+                                                <a className="popup-youtube banner_btn white_button button-style" href="https://go.vantagefit.io/free-ebook-corporate-wellness-program/">
+                                                    <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_15/v1580904957/VantageFit/website/download.png" alt="freedownload" className="hidden-xs hidden-sm lozad" /> 
+                                                    <span>&nbsp;&nbsp;Free Download </span> 
+                                                </a>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div className="images-wellness hidden-xs hidden-sm hidden-sml">
+                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/dumbell.png" className="img-1 lozad" alt="wellnessprogram" />
+                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/cycle.png" className="img-2 lozad" alt="wellnessprogram" />
+                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/food.png" className="img-3 lozad" alt="wellnessprogram" />
+                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/shoe.png" className="img-4 lozad" alt="wellnessprogram" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="welness-bottom hidden-xs"></div>
+                        </section>
+                        <section className="section_space">
+                            <div className="container">
+                                <div className="row d-flex align_items_center">
+                                    <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 wow fadeInLeft animated animated text-center">
+                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597724811/VantageFit/website/week-campaign-12_compress.png" alt="campaign" className="mob_image lozad" />
+                                    </div>
+                                    <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                        <div className="title_head default-spc"><span>12 Week</span>
+                                            <br />Campaign</div>
+                                        <p>Vantage Fit’s unique 12-Week Health Campaign feature gives employers the liberty to usher workplace wellness by assigning different health challenges and tasks specially designed by our certified fitness experts each week to help your employees take up a healthy lifestyle.</p>
                                     </div>
                                 </div>
                             </section>
@@ -500,29 +531,29 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="col-lg-4 col-md-4 col-xs-12 col-sm-12 image-change text-center">
-                                                <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_250/v1597380700/VantageFit/website/build-a-healthy-workforce_compress.png" alt="Stay fit" className="lozad hidden-xs" />
-                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-12 image-change text-center">
+                                            <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_250/v1597380700/VantageFit/website/build-a-healthy-workforce_compress.png" alt="Stay fit" className="lozad hidden-xs" />
                                         </div>
                                     </div>
                                 </div>
-                            </section>
-                            <section className="section_space">
-                                <div className="container custom-container">
-                                    <div className="title_head title_spc text-center">The Vantage Fit Blog</div>
-                                    <div id="search_field">
-                                        {children}
-                                    </div>
-                                </div>
-                            </section>
-                        </div> :
-                        null}
-                    { !isHome ?    
-                        <main className="site-main">
-                        
-                            {children}
-                        </main> : null
-                    }
+                            </div>
+                        </section>
+                        <section className="section_space">
+                            <div className="container custom-container">
+                                <div className="title_head title_spc text-center">The Vantage Fit Blog</div>
+                                <div id="search_field"></div>
+                            </div>
+                        </section>
+                    </div> :
+                    null}
+
+                    { !isHome ?
+                    <main className="site-main">
+                        {/* All the main content gets inserted here, index.js, post.js */}
+                        {children}
+                    </main>:
+                    null}
 
                 </div>
 
@@ -537,7 +568,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                         <div id="custom_html-2" className="widget_text widget footer-widget col-lg-3 col-md-12 col-sm-12 widget_custom_html">
                                             <div className="widget_text f_widget about-widget">
                                                 <div className="textwidget custom-html-widget">
-                                                    <p><img className="lozad" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/poweredby.png" alt="Vantage Circle" /></p>
+                                                    <p><img className="lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/poweredby.png" alt="Vantage Circle" /></p>
                                                     <p>Collaborate with us to provide your employees an engaging and rewarding experience.</p>
                                                     <div className="social-icons">
                                                         <div className="icons">

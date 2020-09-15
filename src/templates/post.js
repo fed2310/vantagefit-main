@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
-import { Layout } from '../components/common'
+import { Layout, Recent } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
 /**
@@ -95,26 +95,15 @@ const Post = ({ data, location }) => {
                                                     </div>
                                                 </div>
                                                 <div className="rightsidebar">
-                                                    {/* {{#get "posts" include="tags,authors" limit="6"  order="published_at desc"}}
+                                                   
                                                     <div className="innerspace_w">
-                                                        <div className="post-title sidebartitle ">Recent Post
-                                                    </div>
-                                                    
-                                                        {{#foreach posts}}
-                                                        <div className=" d-flex align_items_center ind-row">
-                                                        <div className="pclrd col-lg-4 col-md-3 col-xs-12 col-sm-3 pclr"><a href="{{url}}"><img loading="lazy" className="img-ind img-responsive" src="{{img_url feature_image}}" alt="{{title}}"/></a></div>
-                                                            
-                                                        <div className="col-lg-8  col-md-9 col-xs-12 col-sm-9" style="line-height:1.5"><a href="{{url}}" className="title-post-ind">{{title}}</a>
-                                                        <div className="smallfont">
-                                                            {{date format="DD-MM-YYYY"}}
-                                                        </div>
-                                                        </div>
-                                                        </div>
-                                                        {{/foreach}}
+                                                        <div className="post-title sidebartitle ">Recent Post</div>
+                                                        {recentposts.map(({ node }) => (
+                                                            <Recent key={node.id} post={node} />
+                                                        ))}
                                                     
                                                     </div>
                                                     
-                                                    {{/get}} */}
                                                     <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_275/v1580904957/VantageFit/website/pattern-recentpost.png" alt="postdesign" className="postdesign lozad" />
                                                 </div>
                                                 {/* downloadebook sticky */}
@@ -185,6 +174,15 @@ export const postQuery = graphql`
     query($slug: String!) {
         ghostPost(slug: { eq: $slug }) {
             ...GhostPostFields
+        }allGhostPost(
+            sort: { order: DESC, fields: [published_at] },
+            limit: 6,
+        ) {
+          edges {
+            node {
+              ...GhostPostFields
+            }
+          }
         }
     }
 `

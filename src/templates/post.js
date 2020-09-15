@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 
 import { Layout, Recent } from '../components/common'
 import { MetaData } from '../components/common/meta'
+import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
 /**
 * Single post view (/:slug)
@@ -14,6 +15,9 @@ import { MetaData } from '../components/common/meta'
 */
 const Post = ({ data, location }) => {
     const post = data.ghostPost
+    const recentposts = data.allGhostPost.edges
+    const readingTime = readingTimeHelper(post)
+    console.log(data)
 
     return (
         <>

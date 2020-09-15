@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql, withPrefix } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { Navigation } from '.'
-import { PostCard } from '.'
 import config from '../../utils/siteConfig'
 import ReactDOM from 'react-dom'
 import $ from 'jquery'
@@ -510,10 +509,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                         <section className="section_space">
                             <div className="container custom-container">
                                 <div className="title_head title_spc text-center">The Vantage Fit Blog</div>
-                                {posts.map(({ node }) => (
-                                    // The tag below includes the markup for each post - components/common/PostCard.js
-                                    <PostCard key={node.id} post={node} />
-                                ))}
+                                <div id="search_field"></div>
                             </div>
                         </section>
                     </div> :

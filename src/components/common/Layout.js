@@ -100,7 +100,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                                 </div>
                                             </div>
                                             <div className="action_btn d-flex align-items-center mt_40 mb_40 "> <a href="https://go.vantagefit.io/get-a-demo/" className="vc_button banner_btn button-style button_width"> Request Demo </a>
-                                                <a className="popupyoutubevideo popup-youtube banner_btn white_button button-style button_width" href="https://www.youtube.com/watch?v=fVhfKMo3H80" style={{marginLeft: "20"}}>
+                                                <a className="popupyoutubevideo popup-youtube banner_btn white_button button-style button_width" href="https://www.youtube.com/watch?v=fVhfKMo3H80" style={{marginLeft: "20px"}}>
                                                     <div className=""> <span className="fa fa-play-circle" ></span><span >&nbsp;&nbsp;Watch Video </span>
                                                     </div>
                                                 </a>
@@ -595,7 +595,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                                 <h3 className="widget_title f-title f_600 t_color f_size_18 mb_40">Resource Center</h3>
                                                 <div className="menu-footer-4-links-container">
                                                     <ul id="menu-footer-4-links" className="menu">
-                                                        <li id="menu-item-587" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-587"><a href="https://www.vantagefit.io/resources/" className="nav-link">Resources </a></li>
+                                                        <li id="menu-item-587" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-587"><Link className="nav-link" to="/resources/">Resources</Link></li>
                                                         <li id="menu-item-389" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-389"><a href="https://blog.vantagefit.io/" className="nav-link">Blog </a></li>
                                                     </ul>
                                                 </div>

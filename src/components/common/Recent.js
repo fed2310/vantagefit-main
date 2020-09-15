@@ -17,7 +17,7 @@ const Recent = ({ post }) => {
                     <img className="img-ind img-responsive lozad" src={post.feature_image} alt={post.title}/>
                 </a>
             </div>     
-            <div className="col-lg-8 col-md-9 col-xs-12 col-sm-9 lh15" >
+            <div className="col-lg-8 col-md-9 col-xs-12 col-sm-9" style={{lineHeight: "1.5"}}>
                 <a href={url} className="title-post-ind">{post.title}</a>
                 <div className="smallfont">
                     {post.updated_at_pretty}

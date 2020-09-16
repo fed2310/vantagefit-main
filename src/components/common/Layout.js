@@ -8,7 +8,8 @@ import { Navigation } from '.'
 import config from '../../utils/siteConfig'
 import ReactDOM from 'react-dom'
 import $ from 'jquery'
-import ScriptTag from 'react-script-tag';
+import ScriptTag from 'react-script-tag'
+import {Topthree} from '.'
 
 
 // Styles
@@ -511,6 +512,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                 <div className="title_head title_spc text-center">The Vantage Fit Blog</div>
                                 <div id="search_field">
                                 {children}
+                                {/* <Topthree /> */}
                                 </div>
                             </div>
                         </section>
@@ -627,6 +629,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
 }
 
 DefaultLayout.propTypes = {
+    // children: PropTypes.node,
     children: PropTypes.node.isRequired,
     bodyclassName: PropTypes.string,
     isHome: PropTypes.bool,

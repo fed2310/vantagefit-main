@@ -5,25 +5,28 @@ import { Tags } from '@tryghost/helpers-gatsby'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 import GhostContentAPI from '@tryghost/content-api'
 import { PostCardHome } from '.'
-const $ = require("jquery");
-const Topthree = () => (
-    <div className="row" id="topthree"></div>
-)
-    
-const api = new GhostContentAPI({
-    url: `https://vantagefitblog.ghost.io`,
-    key: `a5f3bfdf2173b72ad44fbd4e08`,
-    version: `v3`,
-})
+// const $ = require("jquery");
 
-api.posts
-    .browse({ limit: 3, include: `tags,authors` })
-    .then((res) => {
-        appenddata(res)
+const Topthree = ({ id }) => {
+    const api = new GhostContentAPI({
+        url: `https://vantagefitblog.ghost.io`,
+        key: `a5f3bfdf2173b72ad44fbd4e08`,
+        version: `v3`,
     })
-    .catch((err) => {
-        console.error(err)
-    })
+    api.posts
+        .browse({ limit: 3, include: `tags,authors` })
+        .then((res) => {
+            console.log(res)
+            appenddata(res)
+        })
+        .catch((err) => {
+            console.error(err)
+        })
+    return (
+        <div className="row" id="topthree"></div>
+    )
+    // 
+}
 
 function appenddata(data){
     var info = document.getElementById(`topthree`)
@@ -50,23 +53,8 @@ function appenddata(data){
     }
     info.innerHTML = template	
 }
-// Topthree.propTypes = {
-//     // post: PropTypes.shape({
-//     //     slug: PropTypes.string.isRequired,
-//     //     title: PropTypes.string.isRequired,
-//     //     feature_image: PropTypes.string,
-//     //     featured: PropTypes.bool,
-//     //     tags: PropTypes.arrayOf(
-//     //         PropTypes.shape({
-//     //             name: PropTypes.string,
-//     //         })
-//     //     ),
-//     //     excerpt: PropTypes.string.isRequired,
-//     //     primary_author: PropTypes.shape({
-//     //         name: PropTypes.string.isRequired,
-//     //         profile_image: PropTypes.string,
-//     //     }).isRequired,
-//     // }).isRequired,
-// }
+Topthree.propTypes = {
+    id: PropTypes.string,
+}
 
 export default Topthree

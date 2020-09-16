@@ -16,7 +16,7 @@ import { Topthree } from '../components/common'
 */
 
 const Index = ({ data, location, pageContext, threePost }) => {
-    // console.log(threePost)
+    console.log(location)
     const posts = data.allGhostPost.edges
     // api.posts
     //     .browse({ limit: 3, include: `tags,authors` })
@@ -36,7 +36,11 @@ const Index = ({ data, location, pageContext, threePost }) => {
         <>
             <MetaData location={location} />
             <Layout isHome={true}>
-                <Topthree />
+                {location.pathname === `/` ? 
+                    <Topthree id="1" />
+                    :
+                    null }
+                
                 {/* <div className="container">
                     <section className="post-feed"> */}
                 {/* {posts.map(({ node }) => (

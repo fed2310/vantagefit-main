@@ -509,7 +509,9 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                         <section className="section_space">
                             <div className="container custom-container">
                                 <div className="title_head title_spc text-center">The Vantage Fit Blog</div>
-                                <div id="search_field"></div>
+                                <div id="search_field">
+                                    {children}
+                                </div>
                             </div>
                         </section>
                     </div> :

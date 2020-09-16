@@ -4,7 +4,8 @@ import { graphql } from 'gatsby'
 
 import { Layout, PostCardHome, Pagination } from '../components/common'
 import { MetaData } from '../components/common/meta'
-
+import GhostContentAPI from '@tryghost/content-api'
+import { Topthree } from '../components/common'
 /**
 * Main index page (home page)
 *
@@ -13,22 +14,19 @@ import { MetaData } from '../components/common/meta'
 * in /utils/siteConfig.js under `postsPerPage`.
 *
 */
-const Index = ({ data, location, pageContext }) => {
+
+const Index = ({ data, location, pageContext, threePost }) => {
+    console.log(location)
     const posts = data.allGhostPost.edges
 
     return (
         <>
             <MetaData location={location} />
             <Layout isHome={true}>
-                <div className="container">
-                    <section className="post-feed">
-                        {posts.map(({ node }) => (
-                            // The tag below includes the markup for each post - components/common/PostCard.js
-                            <PostCard key={node.id} post={node} />
-                        ))}
-                    </section>
-                    <Pagination pageContext={pageContext} />
-                </div>
+                {location.pathname === `/` ? 
+                    <Topthree id="1" />
+                    :
+                    null }
             </Layout>
         </>
     )
@@ -42,9 +40,16 @@ Index.propTypes = {
         pathname: PropTypes.string.isRequired,
     }).isRequired,
     pageContext: PropTypes.object,
+    threePost: PropTypes.object,
 }
 
 export default Index
+
+const api = new GhostContentAPI({
+    url: `https://demo.ghost.io`,
+    key: `22444f78447824223cefc48062`,
+    version: `v3`,
+})
 
 // This page query loads all posts sorted descending by published date
 // The `limit` and `skip` values are used for pagination

@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import { Layout, PostCardHome, Pagination } from '../components/common'
 import { MetaData } from '../components/common/meta'
 import GhostContentAPI from '@tryghost/content-api'
+import { Topthree } from '../components/common'
 /**
 * Main index page (home page)
 *
@@ -14,8 +15,8 @@ import GhostContentAPI from '@tryghost/content-api'
 *
 */
 
-const Index = ({ data, location, pageContext }) => {
-    console.log(data)
+const Index = ({ data, location, pageContext, threePost }) => {
+    // console.log(threePost)
     const posts = data.allGhostPost.edges
     // api.posts
     //     .browse({ limit: 3, include: `tags,authors` })
@@ -29,15 +30,18 @@ const Index = ({ data, location, pageContext }) => {
     //         console.error(err)
     //     })
 
+    // console.log(this.posts)
+
     return (
         <>
             <MetaData location={location} />
             <Layout isHome={true}>
+                <Topthree />
                 {/* <div className="container">
                     <section className="post-feed"> */}
-                {posts.map(({ node }) => (
+                {/* {posts.map(({ node }) => (
                     <PostCardHome key={node.id} post={node} />
-                ))}
+                ))} */}
                 {/* </section>
                     <Pagination pageContext={pageContext} />
                 </div> */}
@@ -54,6 +58,7 @@ Index.propTypes = {
         pathname: PropTypes.string.isRequired,
     }).isRequired,
     pageContext: PropTypes.object,
+    threePost: PropTypes.object,
 }
 
 export default Index

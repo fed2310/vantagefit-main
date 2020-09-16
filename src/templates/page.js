@@ -14,6 +14,7 @@ import { MetaData } from '../components/common/meta'
 */
 const Page = ({ data, location }) => {
     console.log(data)
+    console.log(location.pathname)
 
     const posts = data.allGhostPost.edges
     const page = data.ghostPage
@@ -46,19 +47,26 @@ const Page = ({ data, location }) => {
                                 </div> 
                             </section>
                         </div>
+                        {location.pathname !== '/resources/' || location.pathname !== '/resources' ? 
+                            <section
+                                className="content-body load-external-scripts"
+                                dangerouslySetInnerHTML={{ __html: page.html }}
+                            /> : null }
                     </div>
                 </div>
-                <div className="main-content" >
-                    <section>
-                        <div className="container custom-container">
-                            <div className="row">
-                                {posts.map(({ node }) => (
-                                    <PostCard key={node.id} post={node} />
-                                ))}
+                {location.pathname === '/resources/' || location.pathname === '/resources' ? 
+                    <div className="main-content" >
+                        <section>
+                            <div className="container custom-container">
+                                <div className="row">
+                                    {posts.map(({ node }) => (
+                                        <PostCard key={node.id} post={node} />
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                </div>
+                        </section>
+                    </div> : null 
+                }
 
             </Layout>
         </>
@@ -86,6 +94,7 @@ export const postQuery = graphql`
         }
         allGhostPost(
             sort: { order: DESC, fields: [published_at] },
+            filter: {tags: {elemMatch: {name: {eq: "#Resources"}}}},
         ) {
             edges {
                 node {

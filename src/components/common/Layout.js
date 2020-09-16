@@ -379,7 +379,8 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                                 <div className="ovarlay_color"></div>
                                                 <a className="popupvideosection" href="https://www.youtube.com/watch?v=fVhfKMo3H80">
                                                     <div className="wrapper">
-                                                        <div className="iconplay d-flex align_items_center"><i className="fa fa-play"></i>
+                                                        <div className="iconplay d-flex align_items_center">
+                                                            <div className="sprite iconplaysprite"></div>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -451,22 +452,21 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthforce wow fadeInDown animated">
                                             <div className="title_second">
-                                                <div><strong className="guide">A COMPLETE GUIDE TO</strong>
-                                                </div><strong className="second_heading">Corporate<br />Wellness Programs</strong> 
+                                                <div style={{marginBottom: "10px"}}><strong className="guide">A COMPLETE GUIDE TO</strong>
+                                                </div><strong className="second_heading" style={{color: "#ffffff"}}>Corporate<br />Wellness Programs</strong> 
                                             </div>
                                             <div className="transform">
                                                 <a className="popup-youtube banner_btn white_button button-style" href="https://go.vantagefit.io/free-ebook-corporate-wellness-program/">
-                                                    <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_15/v1580904957/VantageFit/website/download.png" alt="freedownload" className="hidden-xs hidden-sm lozad" /> 
                                                     <span>&nbsp;&nbsp;Free Download </span> 
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="images-wellness hidden-xs hidden-sm hidden-sml">
-                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/dumbell.png" className="img-1 lozad" alt="wellnessprogram" />
-                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/cycle.png" className="img-2 lozad" alt="wellnessprogram" />
-                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/food.png" className="img-3 lozad" alt="wellnessprogram" />
-                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/shoe.png" className="img-4 lozad" alt="wellnessprogram" />
+                                    <div className="images-wellness hidden-xs hidden-sm hidden-sml" > 
+                                        <div className="img-1 sprite2 dumbell-sprite wellnessimg"></div>
+                                        <div className="img-2 sprite2 cycle-sprite wellnessimg"></div>
+                                        <div className="img-3 sprite2 food-sprite wellnessimg"></div>
+                                        <div className="img-4 sprite2 shoe-sprite wellnessimg"></div>
                                     </div>
                                 </div>
                             </div>
@@ -540,17 +540,21 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                                     <p><img className="lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/poweredby.png" alt="Vantage Circle" /></p>
                                                     <p>Collaborate with us to provide your employees an engaging and rewarding experience.</p>
                                                     <div className="social-icons">
-                                                        <div className="icons">
-                                                            <a href="https://www.facebook.com/Vantagefit-114318070217339/" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook-f"></i></a>
+                                                        <div>
+                                                            <a href="https://www.facebook.com/Vantagefit-114318070217339/" target="_blank" rel="noopener noreferrer"><div class="sprite2 fb-sprite iconss"></div>
+                                                            </a>
                                                         </div>
-                                                        <div className="icons">
-                                                            <a href="https://twitter.com/FitVantage" target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter" aria-hidden="true"></i></a>
+                                                        <div>
+                                                            <a href="https://twitter.com/FitVantage" target="_blank" rel="noopener noreferrer"><div class="sprite2 twitter-sprite iconss"></div>
+                                                            </a>
                                                         </div>
-                                                        <div className="icons">
-                                                            <a href="https://in.linkedin.com/showcase/vantagefit" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
+                                                        <div>
+                                                            <a href="https://in.linkedin.com/showcase/vantagefit" target="_blank" rel="noopener noreferrer"><div class="sprite2 linkedin-sprite iconss"></div>
+                                                            </a>
                                                         </div>
-                                                        <div className="icons">
-                                                            <a href="https://www.youtube.com/channel/UCzb6J4NEmhuGpj_-u2kz7aw" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                                        <div>
+                                                            <a href="https://www.youtube.com/channel/UCzb6J4NEmhuGpj_-u2kz7aw" target="_blank" rel="noopener noreferrer"><div class="sprite2 youtube-sprite iconss"></div>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>

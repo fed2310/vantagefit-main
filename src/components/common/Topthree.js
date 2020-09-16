@@ -4,8 +4,6 @@ import { Link } from 'gatsby'
 import { Tags } from '@tryghost/helpers-gatsby'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 import GhostContentAPI from '@tryghost/content-api'
-import { PostCardHome } from '.'
-// const $ = require("jquery");
 
 const Topthree = ({ id }) => {
     const api = new GhostContentAPI({

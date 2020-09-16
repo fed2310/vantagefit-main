@@ -5,7 +5,8 @@ import { Tags } from '@tryghost/helpers-gatsby'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
 const Recent = ({ post }) => {
-    const url = `/${post.slug}/`
+    // const url = `/${post.slug}/`
+    const url = `/resources/${post.slug}/`
     const readingTime = readingTimeHelper(post)
     console.log(post)
     // console.log(readingTime)

@@ -291,28 +291,28 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                         </div>
                                         <div className="col-lg-4 col-md-4 col-xs-12 col-sm-12 mid-activity hidden-xs hidden-sm">
                                             <div id="activity">
-                                                <img width="353" className="mob_image Image-Overlay active-img lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/activity-calorie_compress.png" alt="activity" />
+                                                <img width="353" height="704" className="mob_image Image-Overlay active-img lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/activity-calorie_compress.png" alt="activity" />
                                             </div>
                                             <div id="heartrate">
-                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/heart-rate_compress.png" alt="heartrate" />
+                                                <img width="353" height="704" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/heart-rate_compress.png" alt="heartrate" />
                                             </div>
                                             <div id="health">
-                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/wearable-devices_compress.png" alt="health dairy" />
+                                                <img width="353" height="704" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/wearable-devices_compress.png" alt="health dairy" />
                                             </div>
                                             <div id="contest">
-                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/contest-challenge_compress.png" alt="contest" />
+                                                <img width="353" height="704" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/contest-challenge_compress.png" alt="contest" />
                                             </div>
                                             <div id="assessment">
-                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/health-risk-assesment_compress.png" alt="contest" />
+                                                <img width="353" height="704" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/health-risk-assesment_compress.png" alt="contest" />
                                             </div>
                                             <div id="meter">
-                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/mood-o-meter_compress.png" alt="moodometer" />
+                                                <img width="353" height="704" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/mood-o-meter_compress.png" alt="moodometer" />
                                             </div>
                                             <div id="redeem">
-                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/fitness-points_compress.png" alt="fitnesspoints" />
+                                                <img width="353" height="704" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/fitness-points_compress.png" alt="fitnesspoints" />
                                             </div>
                                             <div id="leaderboard">
-                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/realtime-leaderboard_compress.png" alt="leaderboard" />
+                                                <img width="353" height="704" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/realtime-leaderboard_compress.png" alt="leaderboard" />
                                             </div>
                                         </div>
                                         <div className="col-lg-4 col-md-6 col-xs-12 col-sm-12 right-activity">

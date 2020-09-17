@@ -393,10 +393,6 @@ var circularProgressScripts = function() {
 };
 /* CircularProgressScripts ends */
 
-/* Content API call for Vantage Fit Blog starts */
-
-/* Content API call for Vantage Fit Blog ends */
-
 console.log("Scripts loaded")
 
 

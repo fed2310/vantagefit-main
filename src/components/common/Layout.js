@@ -13,8 +13,8 @@ import ScriptTag from 'react-script-tag';
 
 // Styles
 // import '../../styles/app.css'
-import '../../styles/bootstrap.min.css'
-import '../../../node_modules/font-awesome/css/font-awesome.min.css'
+// import '../../styles/bootstrap.min.css'
+// import '../../../node_modules/font-awesome/css/font-awesome.min.css'
 import '../../styles/custom.css'
 import '../../styles/responsive.css'
 
@@ -541,19 +541,19 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                                     <p>Collaborate with us to provide your employees an engaging and rewarding experience.</p>
                                                     <div className="social-icons">
                                                         <div>
-                                                            <a href="https://www.facebook.com/Vantagefit-114318070217339/" target="_blank" rel="noopener noreferrer"><div class="sprite2 fb-sprite iconss"></div>
+                                                            <a href="https://www.facebook.com/Vantagefit-114318070217339/" target="_blank" rel="noopener noreferrer"><div className="sprite2 fb-sprite iconss"></div>
                                                             </a>
                                                         </div>
                                                         <div>
-                                                            <a href="https://twitter.com/FitVantage" target="_blank" rel="noopener noreferrer"><div class="sprite2 twitter-sprite iconss"></div>
+                                                            <a href="https://twitter.com/FitVantage" target="_blank" rel="noopener noreferrer"><div className="sprite2 twitter-sprite iconss"></div>
                                                             </a>
                                                         </div>
                                                         <div>
-                                                            <a href="https://in.linkedin.com/showcase/vantagefit" target="_blank" rel="noopener noreferrer"><div class="sprite2 linkedin-sprite iconss"></div>
+                                                            <a href="https://in.linkedin.com/showcase/vantagefit" target="_blank" rel="noopener noreferrer"><div className="sprite2 linkedin-sprite iconss"></div>
                                                             </a>
                                                         </div>
                                                         <div>
-                                                            <a href="https://www.youtube.com/channel/UCzb6J4NEmhuGpj_-u2kz7aw" target="_blank" rel="noopener noreferrer"><div class="sprite2 youtube-sprite iconss"></div>
+                                                            <a href="https://www.youtube.com/channel/UCzb6J4NEmhuGpj_-u2kz7aw" target="_blank" rel="noopener noreferrer"><div className="sprite2 youtube-sprite iconss"></div>
                                                             </a>
                                                         </div>
                                                     </div>

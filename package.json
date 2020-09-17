@@ -59,9 +59,10 @@
     "gatsby-transformer-sharp": "2.5.14",
     "jquery": "^3.5.1",
     "lodash": "4.17.20",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "6.1.0",
-    "react-script-tag": "^1.1.2"
+    "react-script-tag": "^1.1.2",
+    "reactstrap": "^8.5.1"
   }
 }

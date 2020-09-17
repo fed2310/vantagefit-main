@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
-import { Layout, PostCard } from '../components/common'
+import { Layout, PostCard, PricingPage } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
 /**
@@ -66,6 +66,9 @@ const Page = ({ data, location }) => {
                             </div>
                         </section>
                     </div> : null 
+                }
+                {location.pathname === '/pricing/' || location.pathname === '/pricing' ?
+                    <PricingPage/>: null 
                 }
 
             </Layout>

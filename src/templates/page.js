@@ -34,9 +34,9 @@ const Page = ({ data, location }) => {
                     <div className="elementor-inner">
                         <div className="elementor-section-wrap">
                             <section className="breadcrumb_area breadcrumb_area_two vc-btn-gradient-color vc-btn-gradient-general"> 
-                                <img className="breadcrumb_shap hidden-xs lozad" src="https://res.cloudinary.com/vantagecircle/image/upload/w_500/v1580904957/VantageFit/website/lines.png" alt="lines" />
+                                <img width="570" className="breadcrumb_shap hidden-xs lozad" src="https://res.cloudinary.com/vantagecircle/image/upload/w_500/v1580904957/VantageFit/website/lines.png" alt="lines" />
                                 <div className="marketinglanding">
-                                    <img className="breadcrumb_pulse hidden-xs lozad" src="https://res.cloudinary.com/vantagecircle/image/upload/w_300/v1580904957/VantageFit/website/heart-lines.png" alt="pulse" />
+                                    <img width="300" className="breadcrumb_pulse hidden-xs lozad" src="https://res.cloudinary.com/vantagecircle/image/upload/w_300/v1580904957/VantageFit/website/heart-lines.png" alt="pulse" />
                                 </div>
                                 
                                 <div className="container">

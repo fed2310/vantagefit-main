@@ -57,7 +57,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                 <div className="site-mast-left">
                                     <Link to="/" className="navbar-brand sticky_logo">
                                         {site.logo ?
-                                            <img className="d_logo site-logo" src={site.logo} alt={site.title} />
+                                            <img width="220" className="d_logo site-logo" src={site.logo} alt={site.title} />
                                             : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
                                         <img width="220" alt="Vantage Circle" className="stick_logo lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/00-vantagefit-logo.png" data-loaded="true" />
@@ -90,12 +90,12 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             <div className="app_downloadbanner abtesting">
                                                 <div className=" transform button-style dwnload_app">
                                                     <a href="https://apps.apple.com/in/app/vantage-fit/id1393594182" target="_blank">
-                                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/appstore.png" alt="ios" className="donloadappimg lozad" />
+                                                        <img width="186" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/appstore.png-compressed" alt="ios" className="donloadappimg lozad" />
                                                     </a>
                                                 </div>
                                                 <div className=" transform button-style dwnload_app">
                                                     <a href="https://play.google.com/store/apps/details?id=com.bargaintechnologies.vantagefit.v_fit" target="_blank">
-                                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/googleplay.png" alt="playstore" className="donloadappimg lozad" />
+                                                        <img width="186" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/googleplay-compressed.png" alt="playstore" className="donloadappimg lozad" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -109,13 +109,13 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                     </div>
                                     <div className="col-lg-4 offset-lg-1 col-md-12">
                                         <div className="mobile_img ">
-                                            <img className="mobile_banner" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_410/v1597380700/VantageFit/website/vantagefit-devices_compress.png" alt="Mobile App" />
-                                            <img className="vfit hidden-xs hidden-sm hidden-sml lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_360/v1597380700/VantageFit/website/vantage-fit-person_compress.png" alt="VFit" />
+                                            <img width="410" className="mobile_banner" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_410/v1597380700/VantageFit/website/vantagefit-devices_compress.png" alt="Mobile App" />
+                                            <img width="360" className="vfit hidden-xs hidden-sm hidden-sml lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_360/v1597380700/VantageFit/website/vantage-fit-person_compress.png" alt="VFit" />
                                         </div>
                                     </div>
                                     <div className="shape_images hidden-xs hidden-sm">
-                                        <img className="lines lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_600/v1580904957/VantageFit/website/lines.png" alt="lines" />
-                                        <img className="pulse lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_300/v1580904957/VantageFit/website/heart-lines.png" alt="pulse" />
+                                        <img width="570" className="lines lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_600/v1580904957/VantageFit/website/lines.png" alt="lines" />
+                                        <img width="300" className="pulse lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_300/v1580904957/VantageFit/website/heart-lines.png" alt="pulse" />
                                     </div>
                                 </div>
                             </div>
@@ -291,28 +291,28 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                         </div>
                                         <div className="col-lg-4 col-md-4 col-xs-12 col-sm-12 mid-activity hidden-xs hidden-sm">
                                             <div id="activity">
-                                                <img className="mob_image Image-Overlay active-img lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/activity-calorie_compress.png" alt="activity" />
+                                                <img width="353" className="mob_image Image-Overlay active-img lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/activity-calorie_compress.png" alt="activity" />
                                             </div>
                                             <div id="heartrate">
-                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/heart-rate_compress.png" alt="heartrate" />
+                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/heart-rate_compress.png" alt="heartrate" />
                                             </div>
                                             <div id="health">
-                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/wearable-devices_compress.png" alt="health dairy" />
+                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/wearable-devices_compress.png" alt="health dairy" />
                                             </div>
                                             <div id="contest">
-                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/contest-challenge_compress.png" alt="contest" />
+                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/contest-challenge_compress.png" alt="contest" />
                                             </div>
                                             <div id="assessment">
-                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/health-risk-assesment_compress.png" alt="contest" />
+                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/health-risk-assesment_compress.png" alt="contest" />
                                             </div>
                                             <div id="meter">
-                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/mood-o-meter_compress.png" alt="moodometer" />
+                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/mood-o-meter_compress.png" alt="moodometer" />
                                             </div>
                                             <div id="redeem">
-                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/fitness-points_compress.png" alt="fitnesspoints" />
+                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/fitness-points_compress.png" alt="fitnesspoints" />
                                             </div>
                                             <div id="leaderboard">
-                                                <img className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/realtime-leaderboard_compress.png" alt="leaderboard" />
+                                                <img width="353" className="mob_image Image-Overlay" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/realtime-leaderboard_compress.png" alt="leaderboard" />
                                             </div>
                                         </div>
                                         <div className="col-lg-4 col-md-6 col-xs-12 col-sm-12 right-activity">
@@ -395,7 +395,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                 <div className="container custom-container">
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthyworkforce">
-                                            <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_500/v1597380700/VantageFit/website/person-running-corporate-wellness_compress.png" alt="Request Demo" className="mob_image lozad" />
+                                            <img width="500" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_500/v1597380700/VantageFit/website/person-running-corporate-wellness_compress.png" alt="Request Demo" className="mob_image lozad" />
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthforce wow fadeInDown animated">
                                             <div className="title_second">
@@ -438,7 +438,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-center image-change">
-                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/admindashboard_compress.png" alt="admindashboard" className="mob_image image-fit lozad" />
+                                        <img width="550" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/admindashboard_compress.png" alt="admindashboard" className="mob_image image-fit lozad" />
                                     </div>
                                 </div>
                             </div>
@@ -448,7 +448,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-right mob-pull">
-                                            <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_268/v1597380700/VantageFit/website/_guide-to-corporate-wellness_compress.png" alt="wellnessprogram" className="downloadbook hidden-xs lozad" />
+                                            <img width="268" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_268/v1597380700/VantageFit/website/_guide-to-corporate-wellness_compress.png" alt="wellnessprogram" className="downloadbook hidden-xs lozad" />
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthforce wow fadeInDown animated">
                                             <div className="title_second">
@@ -476,7 +476,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                             <div className="container">
                                 <div className="row d-flex align_items_center">
                                     <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 wow fadeInLeft animated animated text-center">
-                                        <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597724811/VantageFit/website/week-campaign-12_compress.png" alt="campaign" className="mob_image lozad" />
+                                        <img width="675" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1597724811/VantageFit/website/week-campaign-12_compress.png" alt="campaign" className="mob_image lozad" />
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12">
                                         <div className="title_head default-spc"><span>12 Week</span>
@@ -500,7 +500,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             </div>
                                         </div>
                                         <div className="col-lg-4 col-md-4 col-xs-12 col-sm-12 image-change text-center">
-                                            <img loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_250/v1597380700/VantageFit/website/build-a-healthy-workforce_compress.png" alt="Stay fit" className="lozad hidden-xs" />
+                                            <img width="250" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_250/v1597380700/VantageFit/website/build-a-healthy-workforce_compress.png" alt="Stay fit" className="lozad hidden-xs" />
                                         </div>
                                     </div>
                                 </div>
@@ -537,7 +537,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                         <div id="custom_html-2" className="widget_text widget footer-widget col-lg-3 col-md-12 col-sm-12 widget_custom_html">
                                             <div className="widget_text f_widget about-widget">
                                                 <div className="textwidget custom-html-widget">
-                                                    <p><img className="lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/poweredby.png" alt="Vantage Circle" /></p>
+                                                    <p><img width="255" height="64" className="lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/poweredbyVC-compressed.png" alt="Vantage Circle" /></p>
                                                     <p>Collaborate with us to provide your employees an engaging and rewarding experience.</p>
                                                     <div className="social-icons">
                                                         <div>

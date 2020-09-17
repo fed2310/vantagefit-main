@@ -13828,7 +13828,7 @@ tr.greyBackground td {
     height: 60px;
 }
 
-tr.greyBackground td a:hover {
+tr.greyBackground td a:hover, tr.greyBackground td button:hover{
     box-shadow: none;
 }
 

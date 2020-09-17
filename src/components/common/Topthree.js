@@ -34,7 +34,7 @@ function appenddata(data){
             <div class="box-shadow">
                 <div class="overflow">
                     <a href="`+data[i].url+`" target="_blank">
-                        <img class="img-responsive ease" src="`+ data[i].feature_image+`" alt="blog"/>
+                        <img width="377" height="211" class="img-responsive ease" src="`+ data[i].feature_image+`" alt="blog"/>
                     </a>
                 </div>
                 <a href="`+data[i].url+`" target="_blank">

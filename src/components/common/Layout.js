@@ -90,7 +90,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             <div className="app_downloadbanner abtesting">
                                                 <div className=" transform button-style dwnload_app">
                                                     <a href="https://apps.apple.com/in/app/vantage-fit/id1393594182" target="_blank">
-                                                        <img width="186" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/appstore.png-compressed" alt="ios" className="donloadappimg lozad" />
+                                                        <img width="186" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_186/v1580904957/VantageFit/website/appstore-compressed.png" alt="ios" className="donloadappimg lozad" />
                                                     </a>
                                                 </div>
                                                 <div className=" transform button-style dwnload_app">

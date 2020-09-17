@@ -101,7 +101,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             </div>
                                             <div className="action_btn d-flex align-items-center mt_40 mb_40 "> <a href="https://go.vantagefit.io/get-a-demo/" className="vc_button banner_btn button-style button_width"> Request Demo </a>
                                                 <a className="popupyoutubevideo popup-youtube banner_btn white_button button-style button_width" href="https://www.youtube.com/watch?v=fVhfKMo3H80" style={{marginLeft: "20px"}}>
-                                                    <div className=""> <span className="fa fa-play-circle" ></span><span >&nbsp;&nbsp;Watch Video </span>
+                                                    <div className=""> <span className="fa fa-play-circle" ></span><span style={{color: "#ffffff"}}>&nbsp;&nbsp;Watch Video </span>
                                                     </div>
                                                 </a>
                                             </div>

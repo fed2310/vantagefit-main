@@ -1,15 +1,10 @@
 import React, { useState } from 'react'
 import { StartTrialModal } from '.'
 import { Collapse, UncontrolledCollapse, Button, CardBody, Card } from 'reactstrap'
-// import Helmet from 'react-helmet'
-// import { withPrefix, Link } from "gatsby"
-// import '../../../customscripts.js'
 
 const PricingPage = (props) => {
-    const [isOpen, setIsOpen] = useState(true);
     return (
         <>
-            
             <div className="main-content pricingpage">
                 <section>
                     <div className="container">
@@ -499,11 +494,11 @@ const PricingPage = (props) => {
                                         <Button id="faq1">
                                           I am not looking for a Year-round wellness initiative in particular, I want to run it only for a Few weeks/months in a year. Is that supported?
                                         </Button>
-                                        <Collapse isOpen={isOpen} toggler="#faq1">
+                                        <UncontrolledCollapse toggler="#faq1">
                                             <CardBody>
                                                 Absolutely, We have a One time subscription plan which allows you to do just that. If you have more than 1000 users, you can also ask for a custom Price Quote. Click <a href="https://go.vantagefit.io/contact-us/" className="companycolor">here</a> to Talk to Sales.
                                             </CardBody>
-                                        </Collapse>
+                                        </UncontrolledCollapse>
                                     </Card>
                                     <Card>
                                         <Button id="faq2">

@@ -59,7 +59,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             <img width="220" height="45" className="d_logo site-logo" src={site.logo} alt={site.title} />
                                             : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
-                                        <img width="220" height="45" alt="Vantage Circle" className="stick_logo lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/00-vantagefit-logo.png" data-loaded="true" />
+                                        <img width="220" height="45" alt="Vantage Circle" className="stick_logo" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424607/VantageFit/website/vantagefit-logo-220-compress-2.png" data-loaded="true" />
                                     </Link>
                                 </div>
                                     
@@ -113,7 +113,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                         </div>
                                     </div>
                                     <div className="shape_images hidden-xs hidden-sm">
-                                        <img width="570" height="512" className="lines lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_600/v1580904957/VantageFit/website/lines.png" alt="lines" />
+                                        <img width="570" height="512" className="lines lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424606/VantageFit/website/lines-vfit-compress-2.png" alt="lines" />
                                         <img width="300" height="128" className="pulse lozad" loading="lazy" src="https://res.cloudinary.com/vantagecircle/image/upload/w_300/v1580904957/VantageFit/website/heart-lines.png" alt="pulse" />
                                     </div>
                                 </div>
@@ -456,7 +456,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             </div>
                                             <div className="transform">
                                                 <a className="popup-youtube banner_btn white_button button-style" href="https://go.vantagefit.io/free-ebook-corporate-wellness-program/">
-                                                    <span>&nbsp;&nbsp;Free Download </span> 
+                                                    <span style={{color: "#ffffff"}}>&nbsp;&nbsp;Free Download </span> 
                                                 </a>
                                             </div>
                                         </div>
@@ -486,7 +486,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                             </div>
                         </section>
                         <section className="section_space">
-                            <div>
+                            <div style={{background:"#e8fcfa"}}>
                                 <div className="container custom-container">
                                     <div className="row d-flex align_items_center title_second column-change">
                                         <div className="col-lg-8 col-md-8 col-xs-12 col-sm-12">

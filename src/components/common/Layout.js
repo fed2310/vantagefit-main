@@ -457,7 +457,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             </div>
                                             <div className="transform">
                                                 <a className="popup-youtube banner_btn white_button button-style" href="https://go.vantagefit.io/free-ebook-corporate-wellness-program/">
-                                                    <span>&nbsp;&nbsp;Free Download </span> 
+                                                    <span style={{color: "#ffffff"}}>&nbsp;&nbsp;Free Download </span> 
                                                 </a>
                                             </div>
                                         </div>
@@ -487,7 +487,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                             </div>
                         </section>
                         <section className="section_space">
-                            <div>
+                            <div style={{background:"#e8fcfa"}}>
                                 <div className="container custom-container">
                                     <div className="row d-flex align_items_center title_second column-change">
                                         <div className="col-lg-8 col-md-8 col-xs-12 col-sm-12">

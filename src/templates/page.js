@@ -18,7 +18,7 @@ const Page = ({ data, location }) => {
 
     const posts = data.allGhostPost.edges
     const page = data.ghostPage
-
+console.log(page.meta_description)
     return (
         <>
             <MetaData
@@ -26,8 +26,18 @@ const Page = ({ data, location }) => {
                 location={location}
                 type="website"
             />
+
             <Helmet>
                 <style type="text/css">{`${page.codeinjection_styles}`}</style>
+                <title>{page.title}</title>
+                <meta name="description" content={page.meta_description} />
+                <meta property="og:site_name" content={page.meta_title} />
+                <meta property="og:title" content={page.meta_title} />
+                <meta property="og:description" content={page.meta_description} />
+                <meta name="twitter:title" content={page.meta_title} />
+                <meta name="twitter:description" content={page.meta_description} />
+                <meta property="og:title" content={page.meta_title} />
+                <meta property="og:description" content={page.meta_description} />
             </Helmet>
             <Layout>
                 <div className="elementor">

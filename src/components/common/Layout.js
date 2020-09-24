@@ -357,7 +357,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                         </div>
                                     </div>
                                     <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                                        <div className=" text-center"><a href="/features" className="vc_active">Learn More <span className="fa fa-long-arrow-right"></span></a>
+                                        <div className=" text-center"><Link to="/features" className="vc_active">Learn More <span className="fa fa-long-arrow-right"></span></Link>
                                         </div>
                                     </div>
                                 </div>

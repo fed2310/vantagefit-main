@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
 import { Layout, Recent } from '../components/common'
@@ -11,6 +11,7 @@ import './../styles/post.amp.css'
 const Post = (postData) => {
     const { data, location } = postData
     const post = data.ghostPost
+    console.log(data)
     
     return (
         <>
@@ -27,12 +28,25 @@ const Post = (postData) => {
             <Layout amp={postData.pageContext.amp}>
                 <div className="container">
                     <article className="content">
+                        <Link to="/" className="navbar-brand sticky_logo">
+                            {site.logo ?
+                                <img width="220" height="45" className="d_logo site-logo" src={ site.logo } alt={ site.title } />
+                                : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
+                                }
+                            </Link>
+                        <header className="post-header">
+                            <h1 className="content-title">{ post.title }</h1>
+                            
+                            <div className="post-full-published-date">
+                                { post.created_at_pretty }
+                            </div>
+                        </header>
                         { post.feature_image ?
                             <figure className="amp-img-container">
-                                <amp-img src={ post.feature_image } class="contain" layout="fill" alt={ post.title } />
+                                <amp-img src={ post.feature_image } className="contain" layout="fill" alt={ post.title } />
                             </figure> : null }
                         <section className="post-full-content">
-                            <h1 className="content-title">{post.title}</h1>
+                            
 
                             {/* The main post content */ }
                             <section

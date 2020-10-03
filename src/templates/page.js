@@ -18,7 +18,6 @@ const Page = ({ data, location }) => {
 
     const posts = data.allGhostPost.edges
     const page = data.ghostPage
-console.log(page.meta_description)
     return (
         <>
             <MetaData

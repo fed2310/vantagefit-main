@@ -227,6 +227,31 @@ module.exports = {
                 // Defaults to gatsby-route-change
                 routeChangeEventName: "gatsby_route_change",
             },
+        },
+        {
+            resolve: `gatsby-plugin-amp`,
+            options: {
+                // analytics: {
+                //     type: 'gtag',
+                //     dataCredentials: 'include',
+                //     config: {
+                //         vars: {
+                //             gtag_id: <GA_TRACKING_ID>,
+                //             config: {
+                //                 <GA_TRACKING_ID>: {
+                //                     page_location: '{{pathname}}'
+                //                 },
+                //             },
+                //         },
+                //     },
+                // },
+                canonicalBaseUrl: 'https://www.vantagefit.io/',
+                components: ['amp-form'],
+                excludedPaths: ['/404*', '/'],
+                pathIdentifier: '/amp/',
+                relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
+                useAmpClientIdApi: true,
+            },
         }
     ],
 }

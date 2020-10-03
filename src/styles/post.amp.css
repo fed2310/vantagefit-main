@@ -5,8 +5,8 @@
     margin: 0 0 5vmin;
 }
 
-amp-img.contain img {
-  object-fit: cover;
+amp-img img {
+  object-fit: contain;
 }
 .content {
     max-width: 680px;

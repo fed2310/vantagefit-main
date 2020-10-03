@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet'
 import { Layout, Recent } from '../components/common'
 import { MetaData } from '../components/common/meta'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
+import './../styles/post.amp.css'
 
 const Post = (postData) => {
     const { data, location } = postData

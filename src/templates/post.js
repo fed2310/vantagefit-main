@@ -179,6 +179,7 @@ export const postQuery = graphql`
         ghostPost(slug: { eq: $slug }) {
             ...GhostPostFields
         }allGhostPost(
+            filter: {slug: {ne: "data-schema"}},
             sort: { order: DESC, fields: [published_at] },
             limit: 6,
         ) {

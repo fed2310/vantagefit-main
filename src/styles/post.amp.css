@@ -1,7 +1,7 @@
 .amp-img-container {
-	/*position: relative;
-    width: 681px;
-    height: 382px;*/
+	position: relative;
+    /*width: 681px;*/
+    height: 200px;
     margin: 0 0 5vmin;
 }
 amp-img {

@@ -217,9 +217,9 @@ module.exports = {
                 defaultDataLayer: { platform: "gatsby" },
 
                 // Specify optional GTM environment details.
-                gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+                // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
                 gtmPreview: "Preview Environment",
-                dataLayerName: "YOUR_DATA_LAYER_NAME",
+                // dataLayerName: "YOUR_DATA_LAYER_NAME",
 
                 // Name of the event that is triggered
                 // on every Gatsby route change.
@@ -245,6 +245,20 @@ module.exports = {
                 //         },
                 //     },
                 // },
+                analytics: {
+                    type: 'gtag',
+                    dataCredentials: 'include',
+                    config: {
+                        vars: {
+                            gtag_id: 'UA-47126287-8',
+                            config: {
+                                'UA-47126287-8': {
+                                    page_location: '{{pathname}}'
+                                },
+                            },
+                        },
+                    },
+                },
                 canonicalBaseUrl: 'https://www.vantagefit.io/',
                 components: ['amp-form'],
                 excludedPaths: ['/404*', '/'],

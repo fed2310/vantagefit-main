@@ -11000,7 +11000,7 @@ a:hover {
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: auto;
     right: 0;
     -webkit-transition: all .2s linear;
@@ -11014,7 +11014,7 @@ a:hover {
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: -3px;
+    bottom: -5px;
     left: auto;
     right: 0;
     -webkit-transition: all .2s linear;

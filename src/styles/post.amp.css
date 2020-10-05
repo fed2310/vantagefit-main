@@ -1,6 +1,5 @@
 .amp-img-container {
 	position: relative;
-    /*width: 681px;*/
     height: 200px;
     margin: 10vmin 0;
 }
@@ -24,7 +23,7 @@ a{
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: 700;
-    color: #121212;
+    /*color: #121212;*/
 }
 h1 {
     letter-spacing: 0.3px;
@@ -55,11 +54,6 @@ h4{
 .content-body ul{
 	margin-left: 15px;
 }
-/*@media (max-width: 600px){
-h2 {
-    font-size: 2.2rem;
-}
-}*/
 .post-full-published-date{
     margin: 1rem 0 0 0;
     text-transform: uppercase;
@@ -96,6 +90,6 @@ blockquote p{
     -webkit-border-radius: 50%;
     border: 2px solid #f15162;
 }
-.header_area{
+/*.header_area{
 	display: none;
-}
+}*/

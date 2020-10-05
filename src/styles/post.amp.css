@@ -17,3 +17,69 @@ amp-img img {
     max-width: 680px;
     margin: 0 auto;
 }
+a{
+	color: #f15162;
+}
+h1 {
+    letter-spacing: 0.3px;
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.6rem;
+    line-height: 1.2em;
+}
+.post-header{
+	text-align: center;
+}
+.content-title {
+    margin-bottom: .5em;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+    color: #121212;
+}
+.content-body > * + * {
+    margin-top: 1.5em;
+}
+/*@media (max-width: 600px){
+h2 {
+    font-size: 2.2rem;
+}
+}*/
+.post-full-published-date{
+    margin: 1rem 0 0 0;
+    text-transform: uppercase;
+    color: #738a94;
+    font-weight: 500;
+    font-size: 0.9rem;	
+}
+blockquote{
+	box-shadow: none;
+	border-radius: 0;
+	margin: 50px 0 0;
+    padding: 20px 40px 20px 20px!important;
+    background-color: rgb(241 81 98 / 0.05);
+}
+blockquote p{
+	font-size: 15px;
+    margin-bottom: 0;
+}
+.post-full-content li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 20px;
+    margin-bottom: 15px;
+}
+.post-full-content ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 2px solid #f15162;
+}

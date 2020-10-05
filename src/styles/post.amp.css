@@ -21,6 +21,11 @@ amp-img img {
 a{
 	color: #f15162;
 }
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+    color: #121212;
+}
 h1 {
     letter-spacing: 0.3px;
     font-size: 1.8rem;
@@ -29,19 +34,26 @@ h2 {
     font-size: 1.6rem;
     line-height: 1.2em;
 }
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.1em;
+}
+h4{
+	font-size: 1.2rem;
+    line-height: 1.0em;
+}
 .post-header{
 	text-align: center;
 }
 .content-title {
     margin-bottom: .5em;
 }
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-weight: 700;
-    color: #121212;
-}
+
 .content-body > * + * {
     margin-top: 1.5em;
+}
+.content-body ul{
+	margin-left: 15px;
 }
 /*@media (max-width: 600px){
 h2 {
@@ -83,4 +95,7 @@ blockquote p{
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border: 2px solid #f15162;
+}
+.header_area{
+	display: none;
 }

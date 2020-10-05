@@ -29,7 +29,7 @@ const Post = (postData) => {
                 <div className="container">
                     <article className="content">
                         <Link to="/" className="navbar-brand sticky_logo">
-                            <img width="220" height="45" alt="Vantage Circle" className="stick_logo" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424607/VantageFit/website/vantagefit-logo-220-compress-2.png" />
+                            <amp-img width="220" height="45" alt="Vantage Circle" className="stick_logo" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424607/VantageFit/website/vantagefit-logo-220-compress-2.png" />
                         </Link>
                         <header className="post-header">
                             <h1 className="content-title">{ post.title }</h1>

@@ -25,12 +25,15 @@ const Post = (postData) => {
             <Helmet>
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
             </Helmet> }
-            <Layout amp={postData.pageContext.amp}>
+            <header>
+                <Link to="/" className="navbar-brand sticky_logo">
+                    <amp-img width="220" height="45" alt="Vantage Circle" className="stick_logo" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424607/VantageFit/website/vantagefit-logo-220-compress-2.png" />
+                </Link>
+            </header>
+            <main className="content" role="main">
                 <div className="container">
                     <article className="content">
-                        <Link to="/" className="navbar-brand sticky_logo">
-                            <amp-img width="220" height="45" alt="Vantage Circle" className="stick_logo" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424607/VantageFit/website/vantagefit-logo-220-compress-2.png" />
-                        </Link>
+                        
                         <header className="post-header">
                             <h1 className="content-title">{ post.title }</h1>
                             
@@ -53,7 +56,7 @@ const Post = (postData) => {
                         </section>
                     </article>
                 </div>
-            </Layout>
+            </main>
         </>
     )
 }

@@ -57,7 +57,6 @@ const Post = (postData) => {
                         <section class="cta-banner">
                             <a href="https://go.vantagefit.io/free-ebook-corporate-wellness-program/">
                                 <amp-img alt="Vantage Fit ebook download" layout="responsive" src="https://res.cloudinary.com/vantagecircle/image/upload/v1601989071/VantageFit/website/vantagefit-ebook.png"/>
-                                <img decoding="async" alt="Vantage Fit ebook download" src="https://res.cloudinary.com/vantagecircle/image/upload/v1601989071/VantageFit/website/vantagefit-ebook.png" />
                             </a>
                         </section>
                     </article>

@@ -57,7 +57,6 @@ p{
 }
 .content-body > * + * {
     margin-top: 1.5em;
-    font-size: 1rem;
 }
 .content-body ul{
 	padding-left: 15px;

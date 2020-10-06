@@ -19,6 +19,9 @@ amp-img img {
     max-width: 680px;
     margin: 0 auto;
 }
+header.content{
+    padding: 20px 0;
+}
 a{
 	color: #f15162;
 }

@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="viewport-bottom">
                 {/* The footer at the very bottom of the screen */}
 
-                <footer className="new_footer_area bg_color marketinglanding{{post_class}}">
+                <footer className="new_footer_area bg_color marketinglanding">
                     <div className="marketinglanding{{post_class}}">
                         <div className="new_footer_top">
                             <div className="container">

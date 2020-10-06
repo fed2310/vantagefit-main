@@ -58,7 +58,7 @@ const DefaultLayout = ({ data, children, bodyclassName, isHome }) => {
                                             <img width="220" height="45" className="d_logo site-logo" src={site.logo} alt={site.title} />
                                             : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
-                                        <img width="220" height="45" alt="Vantage Circle" className="stick_logo" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424607/VantageFit/website/vantagefit-logo-220-compress-2.png" data-loaded="true" />
+                                        <img width="220" height="45" alt="Vantage Fit" className="stick_logo" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424607/VantageFit/website/vantagefit-logo-220-compress-2.png" data-loaded="true" />
                                     </Link>
                                 </div>
                                     

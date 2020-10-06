@@ -27,7 +27,7 @@ const Post = (postData) => {
             </Helmet> }
             <header class="text-center content">
                 <Link to="/" className="navbar-brand sticky_logo">
-                    <amp-img width="220" height="45" alt="Vantage Circle" className="stick_logo" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424607/VantageFit/website/vantagefit-logo-220-compress-2.png" />
+                    <amp-img width="220" height="45" alt="Vantage Fit" className="stick_logo" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424607/VantageFit/website/vantagefit-logo-220-compress-2.png" />
                 </Link>
             </header>
             <main className="content" role="main">
@@ -54,9 +54,22 @@ const Post = (postData) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
+                        <section class="cta-banner">
+                            <a href="https://go.vantagefit.io/free-ebook-corporate-wellness-program/">
+                                <amp-img alt="Vantage Fit" src="https://res.cloudinary.com/vantagecircle/image/upload/v1601989071/VantageFit/website/vantagefit-ebook.png"/>
+                            </a>
+                        </section>
                     </article>
                 </div>
             </main>
+            <footer className="content page-footer">
+                <Link to="/" className="site-icon i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-layout">
+                    <amp-img width="220" height="45" alt="Vantage Fit" className="stick_logo" src="https://www.vantagefit.io/content/images/2020/02/vantagefit-icon.png" />
+                </Link>
+                <h3>Vantage Fit - A Complete Solution To Your Corporate Wellness Program</h3>
+                <p>Take your corporate wellness program to a whole new level with Vantage Fit-an exclusive employee wellness app with all the features to help your nurture a healthy and engaged workforce</p>
+                <p><a href="https://www.vantagefit.io">Go to Homepage</a></p>
+            </footer>      
         </>
     )
 }

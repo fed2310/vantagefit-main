@@ -17,8 +17,6 @@ import ScriptTag from 'react-script-tag';
 // import '../../../node_modules/font-awesome/css/font-awesome.min.css'
 import '../../styles/custom.css'
 import '../../styles/responsive.css'
-
-
 // import '../../js/customscripts.js'
 
 /**

@@ -120,5 +120,7 @@ blockquote p{
 .page-footer p a{
     font-weight: 500;
 }
-
+.cta-banner img{
+    width: 100%;
+}
 

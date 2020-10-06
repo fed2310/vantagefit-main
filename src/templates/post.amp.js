@@ -56,7 +56,8 @@ const Post = (postData) => {
                         </section>
                         <section class="cta-banner">
                             <a href="https://go.vantagefit.io/free-ebook-corporate-wellness-program/">
-                                <amp-img alt="Vantage Fit" src="https://res.cloudinary.com/vantagecircle/image/upload/v1601989071/VantageFit/website/vantagefit-ebook.png"/>
+                                <amp-img alt="Vantage Fit" layout="responsive" src="https://res.cloudinary.com/vantagecircle/image/upload/v1601989071/VantageFit/website/vantagefit-ebook.png"/>
+                                <img decoding="async" src="https://res.cloudinary.com/vantagecircle/image/upload/v1601989071/VantageFit/website/vantagefit-ebook.png" />
                             </a>
                         </section>
                     </article>
@@ -64,7 +65,7 @@ const Post = (postData) => {
             </main>
             <footer className="content page-footer">
                 <Link to="/" className="site-icon i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-layout">
-                    <amp-img width="220" height="45" alt="Vantage Fit" className="stick_logo" src="https://www.vantagefit.io/content/images/2020/02/vantagefit-icon.png" />
+                    <amp-img width="50" height="50" alt="Vantage Fit" className="stick_logo" src="https://www.vantagefit.io/content/images/2020/02/vantagefit-icon.png" />
                 </Link>
                 <h3>Vantage Fit - A Complete Solution To Your Corporate Wellness Program</h3>
                 <p>Take your corporate wellness program to a whole new level with Vantage Fit-an exclusive employee wellness app with all the features to help your nurture a healthy and engaged workforce</p>

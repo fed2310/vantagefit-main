@@ -57,13 +57,13 @@ const Post = (postData) => {
                         <section class="cta-banner">
                             <a href="https://go.vantagefit.io/free-ebook-corporate-wellness-program/">
                                 <amp-img alt="Vantage Fit ebook download" layout="responsive" src="https://res.cloudinary.com/vantagecircle/image/upload/v1601989071/VantageFit/website/vantagefit-ebook.png"/>
-                                <img decoding="async" alt="Vantage Fit ebook download"  src="https://res.cloudinary.com/vantagecircle/image/upload/v1601989071/VantageFit/website/vantagefit-ebook.png" />
+                                <img decoding="async" alt="Vantage Fit ebook download" src="https://res.cloudinary.com/vantagecircle/image/upload/v1601989071/VantageFit/website/vantagefit-ebook.png" />
                             </a>
                         </section>
                     </article>
                 </div>
             </main>
-            <footer className="content page-footer">
+            <footer className="page-footer">
                 <Link to="/" className="site-icon i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-layout">
                     <amp-img width="50" height="50" alt="Vantage Fit" className="stick_logo" src="https://www.vantagefit.io/content/images/2020/02/vantagefit-icon.png" />
                 </Link>

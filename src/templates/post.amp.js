@@ -25,7 +25,7 @@ const Post = (postData) => {
             <Helmet>
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
             </Helmet> }
-            <header>
+            <header class="text-center content">
                 <Link to="/" className="navbar-brand sticky_logo">
                     <amp-img width="220" height="45" alt="Vantage Circle" className="stick_logo" src="https://res.cloudinary.com/vantagecircle/image/upload/v1600424607/VantageFit/website/vantagefit-logo-220-compress-2.png" />
                 </Link>
@@ -43,7 +43,7 @@ const Post = (postData) => {
                         </header>
                         { post.feature_image ?
                             <figure className="amp-img-container">
-                                <amp-img src={ post.feature_image } className="contain" layout="fill" alt={ post.title } />
+                                <amp-img src={ post.feature_image } className="contain" layout="responsive" alt={ post.title } />
                             </figure> : null }
                         <section className="post-full-content">
                             

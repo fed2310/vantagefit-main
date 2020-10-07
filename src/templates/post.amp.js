@@ -68,7 +68,11 @@ const Post = (postData) => {
                 </Link>
                 <h3>Vantage Fit - A Complete Solution To Your Corporate Wellness Program</h3>
                 <p>Take your corporate wellness program to a whole new level with Vantage Fit-an exclusive employee wellness app with all the features to help your nurture a healthy and engaged workforce</p>
-                <p><a href="https://www.vantagefit.io">Go to Homepage</a></p>
+                <p>
+                    <Link to="/">
+                        Go to Homepage
+                    </Link>
+                </p>
             </footer>      
         </>
     )

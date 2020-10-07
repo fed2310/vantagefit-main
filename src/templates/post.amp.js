@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet'
 import { Layout, Recent } from '../components/common'
 import { MetaData } from '../components/common/meta'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
-import './../styles/post.amp.css'
 
 const Post = (postData) => {
     const { data, location } = postData
@@ -24,6 +23,7 @@ const Post = (postData) => {
             {!postData.pageContext.amp && 
             <Helmet>
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
+                <link rel="stylesheet" href="/post.amp.css" />
             </Helmet> }
             <header class="text-center content">
                 <Link to="/" className="navbar-brand sticky_logo">
